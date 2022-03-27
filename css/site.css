@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*line-height: 1.8em;*/
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+}
+#dark {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 100%);
+}
+#wrapper {
+    /* position: absolute; */
+    z-index: 200;
+}
+#siteNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#siteNav ul li {
+    display: inline;
+}
+#siteNav ul li a {
+    padding: 10px 20px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.current {
+    border: 1px #fff solid;
+}
+#siteNav ul li a:hover {
+    background: #aaa;
+    color: #333;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+}
+.logo img {
+    max-width: 150px;
+}
+.menu {
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+.featured {
+    clear: both;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(220, 220, 220);
+    display: grid;
+}
+.section-head {
+    padding: 50px 25% 30px 25%;
+    text-align: center;
+}
+.section-head .intro {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #ccc;
+}
+.section-head h2 {
+    text-transform: uppercase;
+    font-size: 3.2em;
+    color: #999;
+}
+.section-head .sub {
+    font-style: italic;
+    font-size: 1.7em;
+    color: #333;
+}
+.section-head h3::before {
+    content: "";
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+    border-top: 3px solid #000;
+}
+.section-head h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #333;
+}
+
+.button {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #333;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px #333 solid;
+    transition: all 0.5s;
+}
+.button:hover {
+    background: #333;
+    color: #fff;
+}
+.grid-container {
+    margin: 20px auto;
+    width:800px;
+    height:300px;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .sidebyside {
+      width: 600px;
+      height: 325px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
