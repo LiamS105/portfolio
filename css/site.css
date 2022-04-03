@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     /*line-height: 1.8em;*/
-    font-family: 'Lora', serif;
+    font-family: 'Quicksand', sans-serif
     overflow-x: hidden;
 }
 #dark {
@@ -108,17 +108,35 @@ body {
     width:1200px;
     height:300px;
     background-color:#fff;
-    display:grid;
-    grid-template-columns: 600px 400px;
+
     grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "project1picture1 project1picture2"
+        "project1picture3 project1picture4"
+        "project1description project1description"
+        "project2picture1 project2picture2"
+        "project2picture3 project2picture4"
+        "project2description project2description"
+        "project3picture1 project3picture2"
+        "project3picture3 project3picture4"
+        "project3description project3description";
+        font-size: 30px;
   }
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+
+  .p1d {
+    grid-area: project1description;
+  }
+
+  .p2d {
+    grid-area: project2description;
+  }
+
+  .p3d {
+    grid-area: project3description;
   }
 
   .sidebyside {
@@ -210,4 +228,15 @@ body {
     .modal-content {
       width: 100%;
     }
+  }
+    
+  .after {
+      text-align: center;
+      z-index: 1; /* Sit on top */
+      padding-top: 500px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
   }
