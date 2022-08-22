@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiamS_Portfolio</title>
+
+    <!--    Load Font      -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="dark">
+            <header>
+
+                <nav class="menu" id="siteNav">
+                    <ul>
+                        <li><a href="UI_UX.html">UI/UX</a></li>                        
+                        <li><a href="graphic_design.html">Graphic Design</a></li> 
+                        <li><a href="interaction.html">Interaction Deisgn</a></li>
+                        <li><a href="3D.html" class="current">3D Modeling</a></li>   
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="section-head">
+            <p class="intro">Introduction</p>
+            <h2>Welcome to my Portfolio</h2>
+            <p>Hello, my name is Liam sullivan.This page presents my exploration of coding and webdesign</p>
+            <p>Feel free to browse the other pages to see my additional skills</p>
+
+        </div>
+    </div>
+
+      <div class="grid-container">
+        <div class="project1picture1">
+            <img onclick="ShowImg('Car frontview', this)" src="img/CarFront.png" class="sidebyside"/>
+        </div>
+        <div class="project1picture2">
+            <img onclick="ShowImg('Car sideview', this)" src="img/CarSide.png" class="sidebyside"/>
+        </div>
+        <div class="project1picture3">
+            <img onclick="ShowImg('Car backtview', this)" src="img/CarBackpng.png" class="sidebyside"/>
+        </div>
+        <div class="project1picture4">
+            <img onclick="ShowImg('Car without modifiers', this)" src="img/CarBlank.jpg" class="sidebyside"/>
+        </div>
+        <div class="p1d">
+            <div style="text-align: center;">
+                This is a description of project 1 and it is a long description<br>
+                This is a second line.<p><br></p>
+            </div>
+        </div>
+        <div class="project2picture1">
+            <img onclick="ShowImg('Image One', this)" src="img/oa2.jpg" class="sidebyside"/>
+        </div>
+        <div class="project2picture2">
+            <img onclick="ShowImg('Image Two', this)" src="img/oa3.jpg" class="sidebyside"/>
+        </div>
+        <div class="project2picture3">
+            <img onclick="ShowImg('Image Three', this)" src="img/oa2.jpg" class="sidebyside"/>
+        </div>
+        <div class="project2picture4">
+            <img onclick="ShowImg('Image Four', this)" src="img/oa3.jpg" class="sidebyside"/>
+        </div>
+        <div class="p2d">
+            <div style="text-align: center;">This is a description of project 2 and it is a long description<p><br></p></div>
+        </div>
+        <div class="project3picture1">
+            <img onclick="ShowImg('Image One', this)" src="img/oa2.jpg" class="sidebyside"/>
+        </div>
+        <div class="project3picture2">
+            <img onclick="ShowImg('Image Two', this)" src="img/oa3.jpg" class="sidebyside"/>
+        </div>
+        <div class="project3picture3">
+            <img onclick="ShowImg('Image Three', this)" src="img/oa2.jpg" class="sidebyside"/>
+        </div>
+        <div class="project3picture4">
+            <img onclick="ShowImg('Image Four', this)" src="img/oa3.jpg" class="sidebyside"/>
+        </div>
+        <div class="p3d">
+            <div style="text-align: center;">This is a description of project 3 and it is a long description<p><br></p></div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      <p><br></p><br>
+</body>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var captionText = document.getElementById("caption");
+    function ShowImg(caption, el){
+      var img = el
+      var modalImg = document.getElementById("img01");
+      modal.style.display = "block";
+      modalImg.src = el.src;
+      captionText.innerHTML = caption;
+    }
+    // img.onclick = function(){
+    //   modal.style.display = "block";
+    //   modalImg.src = this.src;
+    //   captionText.innerHTML = this.alt;
+    // }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+</script>
+</html>
