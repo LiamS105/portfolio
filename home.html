@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiamS_Portfolio</title>
+
+    <!--    Load Font      -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="dark">
+            <header>
+
+                <nav class="menu" id="siteNav">
+                    <ul>
+                        <li><a href="UI_UX.html" class="current">UX/UI</a></li> 
+                        <li><a href="graphic_design.html" class="current">Graphic Design</a></li> 
+                        <li><a href="interaction.html">Interaction Design</a></li>
+                        <li><a href="3D.html" class="current">3D Modeling</a></li>                       
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="section-head">
+            <p class="intro">Introduction</p>
+            <h2>Welcome to my Portfolio</h2>
+            <p>Hello, my name is Liam sullivan.This page presents my exploration of user experience and user interface design</p>
+            <p>Click the images for an enhanced view and feel free to browse the other pages to see my additional skills</p>
+
+        </div>
+    </div>
+
+
+      <div class="grid-container">
+        <div class="project1picture1">
+            <img onclick="ShowImg('Low Fildelity Prototype: Bookmarking frequent route', this)" src="img/UI1.jpg" class="sidebyside"/>
+        </div>
+        <div class="project1picture2">
+            <img onclick="ShowImg('Low Fildelity Prototype: Searching route and schedule', this)" src="img/UI2.jpg" class="sidebyside"/>
+        </div>
+        <div class="project1picture3">
+            <img onclick="ShowImg('Low Fildelity Prototype: Checking map and fair', this)" src="img/UI3.jpg" class="sidebyside"/>
+        </div>
+        <div class="project1picture4">
+            <img onclick="ShowImg('Low fidelity Prototype', this)" src="img/UI4.jpg" class="sidebyside"/>
+        </div>
+        <div class="p1d">
+            <div style="text-align: center;">
+                Bus Schedule App Mockup<br>
+                For this project my group researched user needs with transportation apps. We designed a mockup of an app for users to confirm bus schdules, fairs and routes<p><br></p>
+            </div>
+        </div>
+        <div class="project2picture1">
+            <img onclick="ShowImg('Virtual classroom main screen', this)" src="img/UI5.png" class="sidebyside"/>
+        </div>
+        <div class="project2picture2">
+            <img onclick="ShowImg('Virtual classroom quiz screen: ', this)" src="img/UI6.png" class="sidebyside"/>
+        </div>
+        <div class="project2picture3">
+            <img onclick="ShowImg('LVirtual classroom record user recorded section', this)" src="img/UI7.png" class="sidebyside"/>
+        </div>
+        <div class="project2picture4">
+            <img onclick="ShowImg('Class hub', this)" src="img/UI8.png" class="sidebyside"/>
+        </div>
+        <div class="p2d">
+            <div style="text-align: center;">
+                Virtual Classroom and Hub Mockup<br>
+                For this project my group researched the problemed students faced during remote learning and designed a mockup for a virtual class room<p><br></p>
+            </div>
+        </div>
+        <div class="project1picture1">
+            <img onclick="ShowImg('Image One', this)" src="img/d1_Trex.jpg" class="sidebyside"/>
+        </div>
+        <div class="project1picture2">
+            <img onclick="ShowImg('Image Two', this)" src="img/d2_Edmontosaurus.jpg" class="sidebyside"/>
+        </div>
+        <div class="project1picture3">
+            <img onclick="ShowImg('Image Three', this)" src="img/d3_Elasmosaurus.jpg" class="sidebyside"/>
+        </div>
+        <div class="project1picture4">
+            <img onclick="ShowImg('Image Four', this)" src="img/d4_Plateosaurus.jpg" class="sidebyside"/>
+        </div>
+        <div class="p3d">
+            <div style="text-align: center;">
+                Canadian Dinosaur Stamp Designs<br>
+                Meant to be sold as souvenirs with each depicting a dinosaur specific to the province.<p><br></p>
+            </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      <p><br></p><br>
+</body>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var captionText = document.getElementById("caption");
+    function ShowImg(caption, el){
+      var img = el
+      var modalImg = document.getElementById("img01");
+      modal.style.display = "block";
+      modalImg.src = el.src;
+      captionText.innerHTML = caption;
+    }
+    // img.onclick = function(){
+    //   modal.style.display = "block";
+    //   modalImg.src = this.src;
+    //   captionText.innerHTML = this.alt;
+    // }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+</script>
+</html>
